@@ -1,13 +1,10 @@
 package com.example.demo.model;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
-import com.example.demo.controller.EstudianteController;
-
 public class EstudianteDTO {
 
+	private Integer identificacion;
 	private String nombre;
-	private Long edad;
+	private Integer edad;
 
 	public String getNombre() {
 		return nombre;
@@ -17,14 +14,20 @@ public class EstudianteDTO {
 		this.nombre = nombre;
 	}
 
-	public Long getEdad() {
+	public Integer getEdad() {
 		return edad;
 	}
 
-	public void setEdad(Long edad) {
+	public void setEdad(Integer edad) {
 		this.edad = edad;
 	}
 
+	public Integer getIdentificacion() {
+		return identificacion;
+	}
 
+	public void setIdentificacion(Integer identificacion) {
+		this.identificacion = identificacion;
+	}
 
 }
